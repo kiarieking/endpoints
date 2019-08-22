@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for product in products %}
+{#<img src="../../static/img/bunkbed.jpg" alt="Image">#}
+    <img src="{{ product.featured_image_url.url }}" alt="Image">
+    <p>{{ product.featured_image_url}}</p>
+{% endfor %}
+</body>
+</html>
